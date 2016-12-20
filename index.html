@@ -1,0 +1,61 @@
+<html>  
+    <head>
+        <meta charset="utf-8">
+        <title>AngTest </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body ng-app="ngCribs" ng-controller="cribsController">
+        
+
+            <!-- nav bar -->
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Star Wars BnB</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container">
+                <div class="col-sm-4" ng-repeat="crib in cribs">
+                    <div class="thumbnail">
+                        <img class="thumbPic" ng-src="{{crib.image}}.jpg" alt="">
+                        <div class="caption">
+                            <div ng-hide="showDetails === true">
+                                <h3>{{crib.name}}</h3>
+                                <p><i class="glyphicon glyphicon-home"></i><strong>Address: </strong>{{crib.address}}</p>
+                                <p><i class="glyphicon glyphicon-tag"></i><strong>Price: </strong>{{crib.price | currency}}</p>
+                            </div>
+
+                            <button class="btn btn-xs btn-success" ng-hide="showDetails === true" ng-click="showDetails = !showDetails">
+                                Details
+                            </button>
+
+                            <button class="btn btn-xs btn-danger" ng-show="showDetails === true" ng-click="showDetails = !showDetails">
+                                Details
+                            </button>
+
+                            <div class="deatils" ng-show="showDetails === true" ng-click="showDetails = !showDetails">
+                                <h4>
+                                    <span class="">Allegiance: <p>{{crib.details.allegiance}}</p></span><br>
+                                    <span class="">Leader: <p>{{crib.details.leader}}</p></span>
+                                </h4>
+                                <p><strong>Description: </strong>{{crib.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+  
+    </body>
+    <footer>
+        <script src="js/vendor/angular.min.js"></script>
+        <script stc="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.1/ui-bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.1/ui-bootstrap-tpls.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controllers/CribsController.js"></script>
+        <script src="js/services/cribsFactory.js"></script>
+</html>
+<!-- http://localhost:8888/AngTest/ -->

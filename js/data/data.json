@@ -1,0 +1,71 @@
+        [
+            {   "id": 1,
+                "name": "Cloud City",
+                "price": 1200,
+                "address": "Planet Bespin",
+                "description": "Suspended high among the pastel clouds of Bespin is a floating metropolis of sophisticated beauty and political freedom.",
+                "details": {
+                    "allegiance": "Republic",
+                    "leader": "Lando Carlissian"
+                },
+                "image": "img/cloudCity"
+            },
+            {   "id": 2,
+                "name": "Death Star",
+                "price": 1000000000000,
+                "address": "North of Endor",
+                "description": "Both as impregnable fortress and as symbol of the Emperor's inviolable rule, the deep-space mobile battle station was an achievement on the order of any fashioned by the ancestral species that had unlocked the secret of hyperspace and opened the galaxy to exploration",
+                "details": {
+                    "allegiance": "Empire",
+                    "leader": "Wilhuf Tarkin"
+                },
+                "image":"img/deathStar"
+            },
+            {   "id": 3,
+                "name": "Jabbas Palace",
+                "price": 75,
+                "address": "Tatooine",
+                "description": "was the base of operations for Jabba the Hutt, a crime lord and ruling member of the Grand Hutt Council",
+                "details": {
+                    "allegiance": "Neutral",
+                    "leader": "Jabba the Hut"
+                },
+                "image":"img/jabbasPalace"
+            },
+            {
+                "id": 4,
+                "name": "Yodas Hut",
+                "price": 0,
+                "address": "Dagobah",
+                "description": "The hut is simple, constructed of mud, but utilizes Yoda's E3-standard starship lifeboat model escape pod energy source",
+                "details": {
+                    "allegiance":"Republic",
+                    "leader":"Yoda"
+                },
+                "image":"img/yodasHut"
+            },
+            {
+                "id": 5,
+                "name": "Padme Amidalas Kingdom",
+                "price": "Must save planet from destruction",
+                "address": 2200,
+                "description":"a small pastoral world located near the border of the Outer Rim Territories.[5] Naboo did not have a molten core, instead it was comprised of a flooded cave network",
+                "details": {
+                    "allegiance": "Republic",
+                    "leader":"Padme Amidala"
+                },
+                "image":"img/nabooCapital"
+            },
+            {
+                "id": 6,
+                "name": 750,
+                "price": "1 Secret Plan",
+                "address": "The Outer Rim",
+                "description": "Scarif was a secluded and tropical planet[4] in the Outer Rim[1] used by the Galactic Empire to house the construction of the first Death Star, an armored battle station capable of destroying entire worlds. ",
+                "details": {
+                    "allegiance": "Republic",
+                    "leader":"Orson Krennic"
+                },
+                "image": "img/scarif"
+            }
+        ]
