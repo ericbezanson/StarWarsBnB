@@ -98,24 +98,30 @@
                         <div class="col-sm-4">
                             <div class="input-group">
                                 <span class="input-group-addon">Description</span>
-                                <input
+                                <textarea
                                     type="text"
                                     placeholder="Enter a description"
                                     class="form-control"
                                     ng-model="newListing.description">
+                                </textarea>
                             </div>
                         </div>
 
                         <div class="col-sm-4">
-                            <div class="input-group">
-                                <span class="input-group-addon">Allegiance</span>
-                                <input
-                                    type="text"
-                                    placeholder="Enter an Allegiance"
-                                    class="form-control"
-                                    ng-model="newListing.deatils.allegiance">
-                            </div>
-                        </div>
+		                    <div class="input-group">
+		                        <span class="input-group-addon">Allegiance</span>
+		                        <select 
+		              	            type="select" 
+		              	            name="propertyType" 
+		              	            id="propertyType" 
+		              	            class="form-control" 
+		              	            ng-model="newListing.details.allegiance">
+			                            <option value="Empire">Empire</option>
+			                            <option value="Rebels">Rebels</option>
+			                            <option value="Neutral">Neutral</option>  
+		                        </select>
+		                    </div>
+		                </div>
 
                         <div class="col-sm-4">
                             <div class="input-group">
@@ -125,16 +131,18 @@
                                     placeholder="Enter a Leader Name"
                                     class="form-control"
                                     ng-model="newListing.details.leader">
+                                </input>
                             </div>
                         </div>
+
                     </div>
-                </div>
-                <button 
-					class="btn btn-primary listing-button"
-					ng-click="addCrib(newListing)"
-				    ng-show="addListing">Add
-				</button>
-                <pre> {{newListing | json}} </pre>
+                     <button 
+					    class="btn btn-primary listing-button"
+					    ng-click="addCrib(newListing)"
+				        ng-show="addListing">Add
+				    </button>
+                    <pre> {{newListing | json}} </pre>
+                </div>             
             </div>
             </div>
 

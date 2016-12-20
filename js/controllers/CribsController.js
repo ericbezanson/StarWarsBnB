@@ -7,6 +7,14 @@ app.controller('cribsController', ['$scope','cribsFactory', function($scope, cri
         max: 1000000000000
     }
 
+
+    $scope.newListing = {}
+
+    $scope.addCrib = function(newListing) {
+            newListing.image = 'www.placehold.it/350x250';
+            $scope.cribs.push(newListing);
+            $scope.newListing = {};
+        }
     cribsFactory.success(function(data){
         $scope.cribs = data;
     });  
