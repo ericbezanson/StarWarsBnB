@@ -47,8 +47,8 @@
             {
                 "id": 5,
                 "name": "Padme Amidalas Kingdom",
-                "price": "Must save planet from destruction",
-                "address": 2200,
+                "price": 2200,
+                "address": "Naboo",
                 "description":"a small pastoral world located near the border of the Outer Rim Territories.[5] Naboo did not have a molten core, instead it was comprised of a flooded cave network",
                 "details": {
                     "allegiance": "Republic",
@@ -58,8 +58,8 @@
             },
             {
                 "id": 6,
-                "name": 750,
-                "price": "1 Secret Plan",
+                "name": "Scarif",
+                "price": 950,
                 "address": "The Outer Rim",
                 "description": "Scarif was a secluded and tropical planet[4] in the Outer Rim[1] used by the Galactic Empire to house the construction of the first Death Star, an armored battle station capable of destroying entire worlds. ",
                 "details": {
