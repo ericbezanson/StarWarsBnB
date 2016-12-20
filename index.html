@@ -16,9 +16,43 @@
                     </div>
                 </div>
             </nav>
+            <div class="container">
+            <!-- Min / Max Price Filter -->
+            <div class="col-sm-12" id="price-form">
+
+                <div class="col-sm-6">
+                    <div class="input-group">
+                        <span class="input-group-addon">Min Price</span>
+                        <select name="minPrice" id="minPrice" ng-model="priceInfo.min" class="form-control">
+                            <option value="0">$0</option>
+                            <option value="500">$500</option>
+                            <option value="1000">$1000</option>
+                            <option value="10000">$10,000</option>
+                            <option value="100000">$100,000</option>
+                            <option value="1000000000000">$1,000,000,000,000</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="input-group">
+                        <span class="input-group-addon">Max Price</span>
+                        <select name="maxPrice" id="maxPrice" ng-model="priceInfo.max" class="form-control">
+                            <option value="0">$0</option>
+                            <option value="500">$500</option>
+                            <option value="1000">$1000</option>
+                            <option value="10000">$10,000</option>
+                            <option value="100000">$100,000</option>
+                            <option value="1000000000000">$1,000,000,000,000</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            </div>
+
 
             <div class="container">
-                <div class="col-sm-4" ng-repeat="crib in cribs">
+                <p id="desclaimer">(note: all prices are in Galactic Credits although some (Jabba) may accept barter)</p>
+                <div class="col-sm-4" ng-repeat="crib in cribs | cribsFilter:priceInfo">
                     <div class="thumbnail">
                         <img class="thumbPic" ng-src="{{crib.image}}.jpg" alt="">
                         <div class="caption">
@@ -57,5 +91,6 @@
         <script src="js/app.js"></script>
         <script src="js/controllers/CribsController.js"></script>
         <script src="js/services/cribsFactory.js"></script>
+        <script src="js/filters/cribsFilter.js"></script>
 </html>
 <!-- http://localhost:8888/AngTest/ -->
