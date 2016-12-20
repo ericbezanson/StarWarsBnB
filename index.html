@@ -19,7 +19,7 @@
             <div class="container">
             <!-- Min / Max Price Filter -->
             <div class="col-sm-12" id="price-form">
-
+                <div class="row price-form-row" ng-if="!addListing">
                 <div class="col-sm-6">
                     <div class="input-group">
                         <span class="input-group-addon">Min Price</span>
@@ -46,13 +46,102 @@
                         </select>
                     </div>
                 </div>
+                </div>
+                <button
+                    class="btn btn-primary"
+                    ng-click="addListing = !addListing"
+                    ng-show="!addListing"> Add Listing
+                </button>
+
+                <button
+                    class="btn btn-danger"
+                    ng-click="addListing = !addListing"
+                    ng-show="addListing"> Close
+                </button>
+
+                <div class="listing-form" ng-if="addListing">
+                    <h4>Add a Listing</h4>
+                    <div class="row listing-form-row">
+                        <div class="col-sm-4">
+                            <div class="input-group">
+                                <span class="input-group-addon">Name</span>
+                                <input
+                                    type="text"
+                                    placeholder="Enter a Name"
+                                    class="form-control"
+                                    ng-model="newListing.name">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="input-group">
+                                <span class="input-group-addon">Price</span>
+                                <input
+                                    type="text"
+                                    placeholder="Enter a Price"
+                                    class="form-control"
+                                    ng-model="newListing.price">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="input-group">
+                                <span class="input-group-addon">Address</span>
+                                <input
+                                    type="text"
+                                    placeholder="Enter a address"
+                                    class="form-control"
+                                    ng-model="newListing.address">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="input-group">
+                                <span class="input-group-addon">Description</span>
+                                <input
+                                    type="text"
+                                    placeholder="Enter a description"
+                                    class="form-control"
+                                    ng-model="newListing.description">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="input-group">
+                                <span class="input-group-addon">Allegiance</span>
+                                <input
+                                    type="text"
+                                    placeholder="Enter an Allegiance"
+                                    class="form-control"
+                                    ng-model="newListing.deatils.allegiance">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="input-group">
+                                <span class="input-group-addon">Leader</span>
+                                <input
+                                    type="text"
+                                    placeholder="Enter a Leader Name"
+                                    class="form-control"
+                                    ng-model="newListing.details.leader">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button 
+					class="btn btn-primary listing-button"
+					ng-click="addCrib(newListing)"
+				    ng-show="addListing">Add
+				</button>
+                <pre> {{newListing | json}} </pre>
             </div>
             </div>
 
 
             <div class="container">
                 <p id="desclaimer">(note: all prices are in Galactic Credits although some (Jabba) may accept barter)</p>
-                <div class="col-sm-4" ng-repeat="crib in cribs | cribsFilter:priceInfo">
+                <div class="col-sm-4" ng-repeat="crib in cribs | cribsFilter:priceInfo"> <!--pass in priceInfor arg into cribsFilter(listing argument is assigned to the crib in crib as the first argument in a filter is always the current ng-repeat obj) -->
                     <div class="thumbnail">
                         <img class="thumbPic" ng-src="{{crib.image}}.jpg" alt="">
                         <div class="caption">

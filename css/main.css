@@ -10,3 +10,13 @@
     padding: 15px;
     background-color: gold;
 }
+.price-form-row {
+    margin-bottom: 10px;
+}
+
+.listing-form-row, .listing-button {
+    margin-top: 10px;
+}
+.listing-form h3 {
+    color: darkslategray;
+}
