@@ -1,9 +1,9 @@
         [
             {   "id": 1,
-                "name": "Cloud City",
+                "name": "Cloud City Casino",
                 "price": 1200,
                 "address": "Planet Bespin",
-                "description": "Suspended high among the pastel clouds of Bespin is a floating metropolis of sophisticated beauty and political freedom.",
+                "description": "Suspended high among the pastel clouds of Bespin is a floating metropolis of sophisticated beauty and political freedom. Card game capital of the galaxy! you can walk away with nothing or one of the fastest ships in the galaxy! come by and test your luck in Cloud City!",
                 "details": {
                     "allegiance": "Republic",
                     "leader": "Lando Carlissian"
@@ -11,10 +11,10 @@
                 "image": "img/cloudCity"
             },
             {   "id": 2,
-                "name": "Death Star",
+                "name": "Death Star Luxury Suite",
                 "price": 1000000000000,
                 "address": "North of Endor",
-                "description": "Both as impregnable fortress and as symbol of the Emperor's inviolable rule, the deep-space mobile battle station was an achievement on the order of any fashioned by the ancestral species that had unlocked the secret of hyperspace and opened the galaxy to exploration",
+                "description": "Both as impregnable fortress and as symbol of the Emperor's inviolable rule, the deep-space mobile battle station was an achievement on the order of any fashioned by the ancestral species that had unlocked the secret of hyperspace and opened the galaxy to exploration. No longer want to live on this planet anymore? Remove all stress from your life by experiencing the luxorious suites we have to offer. excursions include: force choking tutorials, strom trooper shooting range and even the on-demand destruction of entire planets!",
                 "details": {
                     "allegiance": "Empire",
                     "leader": "Wilhuf Tarkin"
@@ -23,9 +23,9 @@
             },
             {   "id": 3,
                 "name": "Jabbas Palace",
-                "price": 75,
+                "price": 350,
                 "address": "Tatooine",
-                "description": "was the base of operations for Jabba the Hutt, a crime lord and ruling member of the Grand Hutt Council",
+                "description": "was the base of operations for Jabba the Hutt, a crime lord and ruling member of the Grand Hutt Council, open bar and exotic entertainment available, however please make sure jabba gets his money",
                 "details": {
                     "allegiance": "Neutral",
                     "leader": "Jabba the Hut"
@@ -35,9 +35,9 @@
             {
                 "id": 4,
                 "name": "Yodas Hut",
-                "price": 0,
+                "price": 12,
                 "address": "Dagobah",
-                "description": "The hut is simple, constructed of mud, but utilizes Yoda's E3-standard starship lifeboat model escape pod energy source",
+                "description": "The hut is simple, constructed of mud, but utilizes Yoda's E3-standard starship lifeboat model escape pod energy source. For the price of a 4L jug of blue milk-like liquid you could listen to an old green man talk in riddles.. and potentially become a jedi master!",
                 "details": {
                     "allegiance":"Republic",
                     "leader":"Yoda"
@@ -46,10 +46,10 @@
             },
             {
                 "id": 5,
-                "name": "Padme Amidalas Kingdom",
+                "name": "Naboo Kingdom Hotel",
                 "price": 22000,
                 "address": "Naboo",
-                "description":"a small pastoral world located near the border of the Outer Rim Territories.[5] Naboo did not have a molten core, instead it was comprised of a flooded cave network",
+                "description":"a small pastoral world located near the border of the Outer Rim Territories. Naboo did not have a molten core, instead it was comprised of a flooded cave network. Enjoy a night of luxury in the lush palace of the Naboo capital, pack a bathing suit because free Gungan swimming lessons available upon request.",
                 "details": {
                     "allegiance": "Republic",
                     "leader":"Padme Amidala"
@@ -58,14 +58,53 @@
             },
             {
                 "id": 6,
-                "name": "Scarif",
+                "name": "Scarif Data Center Bushes",
                 "price": 950,
                 "address": "The Outer Rim",
-                "description": "Scarif was a secluded and tropical planet[4] in the Outer Rim[1] used by the Galactic Empire to house the construction of the first Death Star, an armored battle station capable of destroying entire worlds. ",
+                "description": "Scarif was a secluded and tropical planet in the Outer Rim used by the Galactic Empire to house the construction of the first Death Star, an armored battle station capable of destroying entire worlds. Security is tight in scarif but for the low price of 950 credits you could stay undetected in a patch of bushes outside of the facility!",
                 "details": {
-                    "allegiance": "Republic",
+                    "allegiance": "Empire",
                     "leader":"Orson Krennic"
                 },
                 "image": "img/scarif"
+            },
+            {
+                "id": 7,
+                "name": "Mos Eisley Outpost",
+                "price": 60000,
+                "address": "Tatooine",
+                "description": "A large spaceport town on the planet Tatooine. It was located on the Great Mesra Plateau, north of Anchorhead and southeast of the Jundland Wastes. Enjoy your stay in one of the few places in tatooine where the chances of being killed on site by the empire are less then 50%!",
+                "details": {
+                    "allegiance": "Neutral",
+                    "leader":"Greedo"
+                },
+                "image": "img/mosEisley"
+            },
+            {
+                "id": 8,
+                "name": "Bast Castle Dungeon",
+                "price": 0,
+                "address": "Vjun",
+                "description": "The secret sanctuary of Darth Vader, Bast Castle was an immense black fortress located near a beach on Vjun. His personal home, Vader often retired to Bast when not on assignment for the Emperor. If you have a high tolerance for hatred, pain and suffering, treat yourself to an more then affordable stay in the acid rain soaked planet of Vjun along side the galaxys most famous child murderer",
+                "details": {
+                    "allegiance": "Empire",
+                    "leader":"Darth Vader"
+                },
+                "image": "img/bastcastle"
+            },
+            {
+                "id": 9,
+                "name": "Chandrilla Townhouse",
+                "price": 775000,
+                "address": "Chandrilla",
+                "description": "Following the Battle of Endor, Chandrila became the capital of the New Republic and the seat of the newly formed Galactic Senate as a tribute to the Republic of old. Relax in comfort in this fully furnished townhouse, walking distance from the new Republic senate. Travel insurance is advised as planet may potentially be targeted by a moon sized planet killing space station from time to time",
+                "details": {
+                    "allegiance": "Republic",
+                    "leader":"Mon Mothma"
+                },
+                "image": "img/chandrilla"
             }
         ]
+
+
+        

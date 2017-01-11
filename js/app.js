@@ -1,1 +1,1 @@
-var app = angular.module("ngCribs", ['ui.bootstrap']);
+var app = angular.module("ngCribs", ['ui.bootstrap']); // initiate app and add bootsrap dependancy 
