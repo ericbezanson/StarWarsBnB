@@ -136,25 +136,20 @@
                                 </div>
                             </div>
                         </div>
+                        </div>
+                            <!-- Send Listing info into addCrib function on click -->
+                            <button class="btn btn-primary listing-button" ng-click="addCrib(newListing)" ng-show="addListing">Add </button>
+                            <!-- Use a pre tag to display working JSON info below add listing form -->
+                            <pre> {{newListing | json}} </pre>
+                        </div> 
                     </div>
-                
-                    </div>
-                        <!-- Send Listing info into addCrib function on click -->
-                        <button class="btn btn-primary listing-button" ng-click="addCrib(newListing)" ng-show="addListing">Add </button>
-                        <!-- Use a pre tag to display working JSON info below add listing form -->
-                        <pre> {{newListing | json}} </pre>
-                    </div>  
-            </div>
-            
-
-
                 </div>
             </div>
             <!-- BnB Listings -->
             <div class="container">
                 <p id="desclaimer">(note: all prices are in Galactic Credits although some (Jabba) may accept barter)</p>
 
-                <!--pass in priceInfor arg into cribsFilter(listing argument is assigned to the crib in crib as the first argument in a filter is always the current ng-repeat obj) -->
+                <!--pass in priceInfo arg into cribsFilter(listing argument is assigned to the crib in crib as the first argument in a filter is always the current ng-repeat obj) -->
 
                 <div class="col-sm-4" ng-repeat="crib in cribs | cribsFilter:priceInfo | orderBy: '-id'"> 
                     <div class="thumbnail">

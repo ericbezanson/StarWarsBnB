@@ -2,6 +2,9 @@
       MAIN
 ***************/
 
+body{
+    background-color: #9b9da0;
+}
 .thumbnail img {
     height: 350px;
     width: 100%;
